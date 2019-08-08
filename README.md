@@ -1,7 +1,7 @@
 # pyRAT v1.0
 ## Author: github.com/thelinuxchoice
 ## IG: instagram.com/linux_choice
-### Don't copy this code without giving me the credits, nerd! Read the Lincense.
+### Don't copy this code without giving me credit, nerd! Read the Liscense.
 
 Windows Remote Administration Tool (RAT)
 
@@ -21,28 +21,15 @@ Usage of pyRAT for attacking targets without prior mutual consent is illegal. It
 ### Installing Dependencies
 
 ```
-bash install.sh
+sudo ./install.sh
 ```
 
-### Installing Dependencies Manually
-
-```
-wget https://www.python.org/ftp/python/2.7.15/python-2.7.15.msi
-wine msiexec /i python-2.7.15.msi /L*v log.txt
-dpkg --add-architecture i386 && apt-get update && apt-get install wine32
-cd ~/.wine/drive_c/Python27/
-wine python.exe Scripts/pip.exe install pyinstaller paramiko
-
-#Configuring PHP (received file size)
-sed -i -e 's+upload_max_filesize = 2M+upload_max_filesize = 100M+g' $(php -i | grep -i "loaded configuration file" | cut -d ">" -f2)
-
-```
 
 ### Usage:
 ```
-git clone https://github.com/thelinuxchoice/pyRAT
+git clone https://github.com/Nat-As/pyRAT
 cd pyRAT
-bash pyrat.sh
+./pyrat.sh
 ```
 
 ### Donate!
